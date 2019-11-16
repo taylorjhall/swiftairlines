@@ -1,3 +1,4 @@
-body {
-  background-color: #999
-}
+<style type="text/css">
+  body{
+    background: red;
+  }
