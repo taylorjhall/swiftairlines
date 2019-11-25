@@ -1,31 +1,61 @@
 body{
-  background-color: #12148b !important;
-  font-family: 'Montserrat';
+  background-color: #eef3db !important;
+  font-family: 'Montserrat' !important;
   margin: 0;
 }
 
 h1{
-  font-family: 'Montserrat';
+  background-color: #b7d8d6;
+  font-family: 'Raleway';
   font-size: 48px;
   text-shadow: 4px 4px 4px 4px;
+  padding: 15px 15px 15px 15px;
+  margin: 0px !important;
 }
 
-header {
-  background: gold;
-  color: white;
+h2{
+  margin: 0px;
+  background-color: #4d6466;
+  padding: 5px 15px 5px 15px;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #d0aa4c !important;
-  border-color:	#12148b !important;
+.btn-primary{
+  color: #000 !important;
+  background-color: #b7d8d6 !important;
+  border-width: 0px !important;
   height: 50px;
+  margin: 5px;
+  padding: 0px !important;
+  border-radius: 10px !important;
 }
+
+
+.btn-primary a{
+    color: black;
+    text-decoration: none !important;
+}
+
+.btn-secondary{
+  background-color: #fe615a !important;
+  border-radius: 15px !important;
+  border-color: #212121 !important;
+  border-width: 3px !important;
+}
+
+.btn-secondary:hover{
+  background-color: #e3564f !important;
+}
+
 
 .btn-primary:hover {
-  color: #fff ;
-  background-color: #b39342 !important;
-  border-color: #12148b !important;
+  color: #000 ;
+  background-color: #98b3b1 !important;
+  border-color: #212121 !important;
+  border-radius: 10px !important;
+}
+
+.btn-primary:hover a{
+  color: black;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -37,9 +67,20 @@ header {
   border-color: #007bff;
 }
 
-.btn-primary:active, .btn-primary.active,
-.show > .btn-primary.dropdown-toggle {
-  background-color: #0069d9;
-  background-image: none;
-  border-color: #0062cc;
+.dropdown-item{
+  background-color: #fe615a !important;
+  color: white !important;
+  border-color: #212121 !important;
+}
+
+.dropdown-item:hover{
+  background-color: #e3564f !important;
+}
+
+
+
+.dropdown-menu{
+  margin: 0px !important;
+  padding: 0px !important;
+  border-width: medium !important;
 }
