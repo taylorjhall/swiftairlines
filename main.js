@@ -1,19 +1,31 @@
-const slideshowImages = document.querySelectorAll(".city-slides.slides.images img");
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
 
-const nextImageDelay = 5000;
-let currentImageCounter = 0; // setting a variable to keep track of the current image (slide)
+// Image List
+images[0] = "lasvegasimage.jpg";
+images[1] = "sydneyimage.jpg";
+images[2] = "parisimage.jpg";
+images[3] = "newyorkimage.jpg";
+images[4] = "greeceimage.jpeg";
+iamges[5] = "hersheyimage.jpg";
 
-// slideshowImages[currentImageCounter].style.display = "block";
-slideshowImages[currentImageCounter].style.opacity = 1;
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
 
-setInterval(nextImage, nextImageDelay);
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++;
+	} else {
+		// Reset Back To O
+		i = 0;
+	}
 
-function nextImage() {
-  // slideshowImages[currentImageCounter].style.display = "none";
-  slideshowImages[currentImageCounter].style.opacity = 0;
-
-  currentImageCounter = (currentImageCounter+1) % slideshowImages.length;
-
-  // slideshowImages[currentImageCounter].style.display = "block";
-  slideshowImages[currentImageCounter].style.opacity = 1;
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
 }
+
+// Run function when page loads
+window.onload=changeImg;
