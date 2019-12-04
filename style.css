@@ -63,7 +63,30 @@ select{
 input:focus, textarea:focus{
   box-shadow: 0 0 5px rgba(81, 203, 238, 1);
   border: 1px solid rgba(81, 203, 238, 1);
+}
 
+input[type="date"]{
+  color: grey;
+}
+
+legend{
+  display: inline;
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+.section {
+  background-color: #ffd601;
+  color: white;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: .9em;
+  margin-right: 15px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(225, 225, 225, 0.2);
+  border-radius: 100%;
 }
 
 .navigation{

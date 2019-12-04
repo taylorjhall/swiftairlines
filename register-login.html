@@ -51,7 +51,7 @@
   </center>
     <fieldset>
 
-      <legend><span class="section">1</span>Basic Info</legend>
+      <legend class="section-label"><span class="section">1</span>Basic Info</legend>
 
         <label for="fname">First Name </label> <br>
           <input type="text" name="fname" value=""> <br>
@@ -116,7 +116,13 @@
         <input type="password" name="conf-pwd" value=""> <br>
 
       <label for="security1">Security Question 1</label> <br>
-        <select class="security1" name=""></select> <br>
+        <select class="security1" name="">
+          <option value="favoriteteacher">What's the name of your favorite teacher?</option>
+          <option value="firstjob">What city was your first job in?</option>
+          <option value="street">What street did you live on in fifth grade?</option>
+          <option value="nickname">What was your childhood nickname?</option>
+          <option value="hero">Who was your childhood hero?</option>
+        </select> <br>
         <input type="text" name="securityans1" value=""> <br>
 
         <label for="security2">Security Question 2</label> <br>
