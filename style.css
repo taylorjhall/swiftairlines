@@ -4,7 +4,7 @@ body{
   margin: 0px;
 }
 
-.topbar button {
+.topbar button{
   float: right;
   margin: 5px;
   height: 20px;
@@ -16,6 +16,23 @@ body{
 
 .topbar button:hover{
   background-color: #bfbfbf;
+}
+
+.login h1{
+  font-size: 35px;
+}
+
+.login .username , .password{
+  font-size: 20px;
+  margin: 10px 0px 20px 40px;
+}
+
+.login .submit-button{
+  border: none;
+}
+
+fieldset{
+
 }
 
 .navigation{
@@ -101,7 +118,6 @@ body{
 
 .slider{
   box-shadow: 2px 4px rgba(0, 0, 0, 0.3);
-  background-color: navy;
 }
 
 .book-widget{

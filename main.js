@@ -8,7 +8,7 @@ images[1] = "sydneyimage.jpg";
 images[2] = "parisimage.jpg";
 images[3] = "newyorkimage.jpg";
 images[4] = "greeceimage.jpeg";
-iamges[5] = "hersheyimage.jpg";
+images[5] = "hersheyimage.jpg";
 
 // Change Image
 function changeImg(){
