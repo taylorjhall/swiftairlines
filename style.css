@@ -1,3 +1,5 @@
+* {box-sizing: border-box;}
+
 body{
   background-color: #eef3db !important;
   font-family: 'Montserrat' !important;
@@ -31,7 +33,36 @@ body{
   border: none;
 }
 
-fieldset{
+form h1{
+  font-weight: bold;
+}
+
+form{
+  max-width: 75%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-image: linear-gradient(#9cb0b3, #b7d8d6);
+  border-radius: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="date"],
+select{
+  background-color: #e0e0e0;
+  border: none;
+  font-size: 16px;
+  height: auto;
+  padding: 5px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5) inset;
+  margin-bottom: 30px;
+}
+
+input:focus, textarea:focus{
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: 1px solid rgba(81, 203, 238, 1);
 
 }
 
