@@ -856,6 +856,25 @@ footer p em {
   padding: 10px;
 }
 
+.page-heading-3 {
+	background-image: url(../img/dubaiimage.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	position: relative;
+  padding: 10px;
+}
+
+.page-heading-4 {
+	background-image: url(../img/tokyoimage.jpg) ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	text-align: center;
+	position: relative;
+  padding: 10px;
+}
 
 .contact-us .section-heading h2 {
 	margin-top: 100px;
