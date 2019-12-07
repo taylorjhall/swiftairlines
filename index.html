@@ -26,11 +26,15 @@ http://www.tooplate.com/view/2093-flight
 
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 
+        <link rel="shortcut icon" type="image/png" href="favicon-16x16.png">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
 <body>
 
+  <div class="loader">
+    <img src="img\planeloading.gif" alt="Loading..">
+  </div>
 
     <section class="banner" id="top">
         <div class="container">
@@ -38,14 +42,13 @@ http://www.tooplate.com/view/2093-flight
                 <div class="col-md-5">
                     <div class="left-side">
                         <div class="logo">
-                            <img src="img/swiftairlines.png" alt="Swift Airlines logo" height="150px"> <label class="logo-label" for=""> SWIFT <br> AIRLINES</label>
-                        </div>
+<img src="img/fulllogo.png" alt="Swift Airlines logo" height="175px">                        </div>
                         <div class="tabs-content">
                             <h4>We'll get you there swift and sound.</h4>
                             <ul class="social-links">
                                 <li><a href="info.html"><em>What Makes Us Different</em></a></li>
-                                <li><a href="info.html"><em>Deals and Discounts</em></a></li>
-                                <li><a href="info.html"><em>Pricing</em></a></li>
+                                <li><a href="info.html#deals"><em>Deals and Discounts</em></a></li>
+                                <li><a href="info.html#pricing"><em>Pricing</em></a></li>
                             </ul>
                         </div>
                         <div class="page-direction-button">
@@ -78,7 +81,7 @@ http://www.tooplate.com/view/2093-flight
                                         <div class="col-md-6">
                                             <fieldset>
                                                 <label for="to">To:</label>
-                                                <input type="text" required name='to' onchange='this.form.()' placeholder="Select a destination..."/></input>
+                                                <input type="text" required name='to' onchange='this.form.()' placeholder="Enter a destination..."/></input>
                                             </fieldset>
                                         </div>
                                         <div class="col-md-6">
@@ -109,8 +112,19 @@ http://www.tooplate.com/view/2093-flight
                                         </div>
                                         <div class="col-md-6">
                                             <fieldset>
-                                                <button type="submit" id="form-submit" class="btn">Order Ticket Now</button>
+                                                <button onclick="myFunction()" type="submit" id="form-submit" class="btn">Order Ticket Now</button>
                                             </fieldset>
+                                            <script>
+                                              function myFunction() {
+                                                var txt;
+                                                if (confirm("There is one flight available! Press OK to book now. Press cancel to cancel the purchase.")) {
+                                                  txt = "Flight Booked! Thank you for flying with Swift.";
+                                                } else {
+                                                  txt = "Purchase canceled.";
+                                                }
+                                                document.getElementById("demo").innerHTML = txt;
+                                              }
+                                              </script>
                                         </div>
                                     </div>
                                 </form>

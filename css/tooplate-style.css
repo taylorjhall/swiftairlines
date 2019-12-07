@@ -822,10 +822,85 @@ footer p em {
 	color: #ffe165;
 }
 
+.loader{
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
 
+.loader img{
+  width: 150px;
+}
 
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
 
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
+.section-heading h4{
+  text-align: center;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-weight: 600;
+}
+
+.section-heading a{
+  color: #ffe165;
+}
+
+.socialmedias{
+  height: 100px;
+  width: 100px !important;
+  display: inline-block;
+}
+
+.socailmedias p{
+  background-color: red;
+}
+
+.socialmedianame:hover{
+  cursor: pointer;
+}
+
+.about-us{
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 0px;
+}
+
+.about-us h4{
+  font-weight: bold;
+}
+
+.termsandconditions{
+  margin-left: 5px;
+}
+
+.termsandconditions h1{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.termsandconditions h2{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.termsandconditions p{
+  font-size: 3;
+}
 
 .page-heading {
 	background-image: url(../img/lasvegasimage.jpg) ;
@@ -907,8 +982,6 @@ footer p em {
 	font-size: 14px;
 	color: #4a4a4a;
 }
-
-
 
 .contact-form {
 	margin-top: 100px;

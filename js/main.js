@@ -1,14 +1,14 @@
 jQuery(document).ready(function($) {
 
 	'use strict';
-      
+
       $('#form-submit .date').datepicker({
       });
 
       var owl = $("#owl-suiteroom");
 
         owl.owlCarousel({
-          
+
           pagination : true,
           paginationNumbers: false,
           autoPlay: 6000, //Set AutoPlay to 3 seconds
@@ -17,14 +17,14 @@ jQuery(document).ready(function($) {
           itemsDesktopSmall : [900,1], // betweem 900px and 601px
           itemsTablet: [600,1], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-          
+
       });
 
 
       var owl = $("#owl-mostvisited");
 
         owl.owlCarousel({
-          
+
           pagination : true,
           paginationNumbers: false,
           autoPlay: 6000, //Set AutoPlay to 3 seconds
@@ -33,11 +33,11 @@ jQuery(document).ready(function($) {
           itemsDesktopSmall : [900,2], // betweem 900px and 601px
           itemsTablet: [600,1], //2 items between 600 and 0
           itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-          
+
       });
 
 
-        
+
         $('.recommendedgroup > div').hide();
         $('.recommendedgroup > div:first-of-type').show();
         $('.tabs a').click(function(e){
@@ -50,7 +50,7 @@ jQuery(document).ready(function($) {
         $this.addClass('active');
         $(tabgroup).children('div').hide();
         $(target).show();
-      
+
         })
 
 
@@ -66,7 +66,7 @@ jQuery(document).ready(function($) {
         $this.addClass('active');
         $(tabgroup).children('div').hide();
         $(target).show();
-      
+
         })
 
 
@@ -82,14 +82,14 @@ jQuery(document).ready(function($) {
         $this.addClass('active');
         $(tabgroup).children('div').hide();
         $(target).show();
-      
+
         })
 
 
 
         $(".pop-button").click(function () {
             $(".pop").fadeIn(300);
-            
+
         });
 
         $(".pop > span").click(function () {
@@ -117,3 +117,40 @@ jQuery(document).ready(function($) {
 
 
 });
+
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
+var i = 0; 			// Start Point
+var images = [];	// Images Array
+var time = 3000;	// Time Between Switch
+
+// Image List
+images[0] = "aerospace-engineering.jpg";
+images[1] = "cockpit.jpg";
+images[2] = "boeing-747-blueprint-2.png";
+images[3] = "seat-isometric.png";
+images[4] = "aerospace-engineering.jpg";
+images[5] = "boeing-747-400-blueprint.gif"
+
+// Change Image
+function changeImg(){
+	document.slide.src = images[i];
+
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++;
+	} else {
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+// Run function when page loads
+window.onload=changeImg;
